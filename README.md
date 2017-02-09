@@ -50,6 +50,13 @@ For command line help, visit our wiki page on Neat’s
   gem install sass # or gem update sass
   ```
 
+  **Pro Tip:** You can target installation into a specific directory using the
+  `path` flag:
+
+  ```bash
+  neat install --path my/custom/path/
+  ```
+
 1. Install the Neat library into the current directory:
 
   ```bash
