@@ -44,19 +44,19 @@ For command line help, visit our wiki page on Neat’s
 
   Alternatively, you can install Neat with [Bower].
 
-2. Install or update Neat’s dependencies:
+1. Install or update Neat’s dependencies:
 
   ```bash
   gem install sass # or gem update sass
   ```
 
-3. Install the Neat library into the current directory:
+1. Install the Neat library into the current directory:
 
   ```bash
   neat install
   ```
 
-4. Import Neat in your stylesheet:
+1. Import Neat in your stylesheet:
 
   ```scss
   @import "neat/neat";
@@ -76,7 +76,7 @@ For command line help, visit our wiki page on Neat’s
   gem "neat"
   ```
 
-2. Then run:
+1. Then run:
 
   ```bash
   bundle install
@@ -89,7 +89,7 @@ For command line help, visit our wiki page on Neat’s
   bundle update sass
   ```
 
-3. Import Neat in your `application.scss`:
+1. Import Neat in your `application.scss`:
 
   ```scss
   @import "neat";
@@ -128,13 +128,13 @@ For command line help, visit our wiki page on Neat’s
   gem uninstall neat
   ```
 
-2. Reinstall the Neat gem, using the `-v` flag to specify the version you need:
+1. Reinstall the Neat gem, using the `-v` flag to specify the version you need:
 
   ```bash
   gem install neat -v 1.8.1
   ```
 
-3. Follow the [instructions above](#installation) to install Neat into your
+1. Follow the [instructions above](#installation) to install Neat into your
    project.
 
 ## The Bourbon family
