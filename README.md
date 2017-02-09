@@ -19,6 +19,7 @@ use out of the box and flexible enough to customize down the road.
 
 - [Requirements](#requirements)
 - [Installation](#installation)
+- [Command Line Interface](#command-line-interface)
 - [The Bourbon Family](#the-bourbon-family)
 - [Contributing](#contributing)
 - [License](#license)
@@ -32,9 +33,6 @@ use out of the box and flexible enough to customize down the road.
   [LibSass]: https://github.com/sass/libsass
 
 ## Installation
-
-For command line help, visit our wiki page on Neat’s
-[command line interface](https://github.com/thoughtbot/neat/wiki/Command-Line-Interface).
 
 1. Install the Neat gem using the [RubyGems] package manager:
 
@@ -143,6 +141,31 @@ For command line help, visit our wiki page on Neat’s
 
 1. Follow the [instructions above](#installation) to install Neat into your
    project.
+
+## Command Line Interface
+
+```bash
+neat [options]
+```
+
+### Options
+
+| Option            | Description               |
+| :---------------- | :------------------------ |
+| `-h`, `--help`    | Show help                 |
+| `-v`, `--version` | Show the version number   |
+| `--path`          | Specify a custom path     |
+| `--force`         | Force install (overwrite) |
+
+### Commands
+
+| Command        | Description                                        |
+| :------------- | :------------------------------------------------- |
+| `neat install` | Install Neat into the current directory            |
+| `neat update`  | Overwrite and update Neat in the current directory |
+| `neat remove`  | Removes Neat from the current directory            |
+| `neat help`    | Show help                                          |
+| `neat version` | Show the version number                            |
 
 ## The Bourbon family
 
