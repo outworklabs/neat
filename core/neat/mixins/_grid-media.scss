@@ -1,8 +1,15 @@
 @charset "UTF-8";
-/// Creates a media query in which custom grid properties can be defined.
-/// Add the `media` property to your custom grid settings map and add the media
-/// you would like to scope to. If only a number is defined, it is assumed this
-/// is a `min-with` value. Your custom grid can then be passed to the mixin.
+/// Neat supports complex changes to the grid applied by Neat's other mixins
+/// within the scope of the grid-media block content. When a
+/// [custom grid](#custom-grids) with a defined `media` property is passed into
+/// the mixin, grid media uses the media property as the expression for the
+/// media query it creates (e.x. `(min-width: 700px) and
+/// (orientation: landscape)`).
+///
+/// Define the `media` property within your custom grid settings map and add the
+/// expression the resulting media query should be scoped to. If only a number
+/// (with unit) is defined, it is assumed this is a `min-with` value, aka mobile
+/// first. This grid should then be passed into the mixin directly.
 ///
 /// @group features
 ///
@@ -12,7 +19,13 @@
 ///   The grid to be used within the scope of the block.
 ///   This grid should include the `media` property to determine the expression
 ///   for the media query.
-///   By default, the global `$neat-grid` will be used.
+///
+/// @content
+///   Grid media will temporarily the override the default grid with the
+///   attributes of the custom grid. This change is scoped to within the mixin
+///   block, and once the mixin has ended the default grid will revert to its
+///   original state as defined by `$neat-grid`. This allows for different
+///   gutter width and column count based on screen size or other properties.
 ///
 /// @example scss
 ///   $custom-neat-grid: (
